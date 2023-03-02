@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body style="width: 100vw;background-color: rgb(210, 212, 214);" >
+
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"><img src="{{url_for('static', filename='logo.png')}}" alt=""></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">About us</a>
+              </li>
+            </ul>
+     
+          </div>
+        </div>
+      </nav>
+ <div class="container d-flex flex-column align-items-center justify-content-center p-5 text-center" style="width: 100vw">
+
+    <div class="container d-flex flex-column align-items-center justify-content-center p-5 pt-6 text-center" style="background-color: rgb(255, 255, 255);">
+    <h1 class="mt-3" style="color:#de3450;">Movie Search Engine</h1>
+    <br>
+    <form class="d-flex pt-5 mb-3" method="post" action="/search" role="search" style="width: 60%;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="url">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+</div>
+<div class="container d-flex flex-column align-items-center justify-content-center p-5 pt-6 text-center" style="background-color: rgb(255, 255, 255);">
+    <h2 style="color:#de3450;" class="mb-3">Best Movie Search Engine </h2>
+    <p>M-searcher is the fastest movie serach engine tool that allows you to easily convert and download videos and audios from movie for free and in the best available quality. M-searcher is the ultimate tool to download unlimited movie videos without any need for registration. You can quickly convert and download hundreds of videos and music files directly from movie and other social media websites. We support all audio and video formats like MP3, MP4, M4V, FLV, WEBM, 3GP, WMV, AVI, etc., and the most amazing thing, it's completely free.</p>
+</div>
+<div class="container d-flex flex-columnalign-items-center justify-content-center p-5 pt-6 text-center" style="background-color: rgb(255, 255, 255);">
+<div class="lef text-start p-2" style="width: 50%;">
+
+
+<h5>How to Download Movies with M-searcher?</h5>
+
+<ul style="font-size: smaller;">
+
+<li> Open movie and copy the video URL you want to download.</li>
+<li>Paste the video URL in the Search box, Tool will fetch video info.</li>
+<li>Select the Video or Audio quality you need and click the "Convert" button.</li>
+<li>after the conversion is successfully completed, hit the "Download" button.</li>
+<li>Once the video is downloaded, you can play it whenever and wherever you want.</li>
+</ul>
+
+
+</div>
+<div class="right text-start ms-5" style="width: 50%;">
+
+<h5> Why use our Online M-searcher?</h5>
+<ul style="font-size: smaller;">
+<li>Unlimited Conversions, so you can convert all your videos.</li>
+<li>High-Speed encoding to convert your videos faster.</li>
+<li>Unlimited Downloads, convert as much as you can.</li>
+<li>No Signup required, our service is totally free.</li>
+<li>Support Downloading multiple formats, e.g. MP4 and MP3.</li>
+</ul>
+
+
+</div>
+  </div>
+
+ </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
